@@ -8,6 +8,10 @@ body {
   background: linear-gradient(90deg, #00A3E0, #68217A); 
 }
 
+.main__content{
+  margin-top: 4%;
+}
+
 .forum-box {
   background-color: #1A1A1A;
   border-radius: 8px;

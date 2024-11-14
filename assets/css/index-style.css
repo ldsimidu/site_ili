@@ -1,0 +1,223 @@
+/* General body settings */
+body {
+    margin: 0;
+    background-color: #101010;
+    color: #e0e0e0;
+    overflow-x: hidden; /* Evita o arrasto lateral */
+}
+
+/* Header */
+header {
+    background-image: url('../images/back.png');
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+
+.title-neurovital {
+    font-size: 70px;
+    color: #000000;
+}
+
+header img {
+    max-width: 150px;
+    border-radius: 50%;
+}
+
+/* Buttons */
+header button, .extra-section button {
+    margin-top: 20px;
+    background-color: #333333;
+    color: #e0e0e0;
+    border: 1px solid #555555;
+}
+
+/* Sections */
+section {
+    padding: 60px 0;
+}
+
+.one-card, .two-card, .three-card {
+    margin-bottom: 10%;
+}
+
+.d-section {
+    background-color: #1e1e1e;
+}
+
+.section-bg {
+    background: linear-gradient(to right, #178b00, #00ff80);
+    color: #000000;
+}
+
+.text-gradient {
+    background: linear-gradient(to right, #178b00, #00ff80);
+    font-size: 90px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Image Section */
+.image-section {
+    text-align: center;
+}
+
+.section-title {
+    display: flex;
+    justify-content: center;
+    font-size: 70px;
+    color: #ffffff;
+}
+
+.section-subtitle {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.section-title-bg {
+    display: flex;
+    justify-content: center;
+    font-size: 70px;
+    color: #000000;
+}
+
+.section-subtitle-bg {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    color: #000000;
+}
+
+
+.pre-footer {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #101010;
+    color: #e0e0e0;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Extra Section */
+.extra-section {
+    background-color: #101010;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+    gap: 20px;
+    text-align: center;
+    flex-direction: row;
+    overflow-x: hidden;
+}
+
+.extra-section img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.extra-section p {
+    max-width: 600px;
+    margin: 0 auto;
+    color: #e0e0e0;
+    text-align: center;
+}
+
+.desc {
+    font-size: 25px;
+    color: #e0e0e0;
+}
+
+.btn-custom, .btn-custom2 {
+    background: linear-gradient(45deg, #333333, #555555);
+    color: #e0e0e0;
+    font-size: 1.2rem;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 30px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-custom:hover, .btn-custom2:hover {
+    color: #ffffff;
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+    /* General adjustments */
+    body {
+        overflow-x: hidden;
+    }
+
+    #title-neurovital{
+        font-size: 20px;
+    }
+
+    header {
+        height: 60vh;
+    }
+
+    .title-neurovital {
+        font-size: 20px;
+    }
+
+    .header-title {
+        margin-top: 40%;
+    }
+
+    /* Buttons */
+    .btn-custom, .btn-custom2 {
+        width: 100%;
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    /* Image adjustments */
+    .extra-section img {
+        max-width: 300px;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+
+    .text-gradient {
+        font-size: 50px;
+    }
+
+    .section-title {
+        font-size: 50px;
+    }
+
+    .section-subtitle {
+        font-size: 18px;
+    }
+
+    .one-card, .two-card, .three-card {
+        margin-bottom: 20%;
+    }
+
+    .extra-section {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+}
